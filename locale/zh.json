@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "当日 token",
+    "description": "在窗口左上角红绿灯旁显示 DSH 今日消耗的 token 总量，数据来自本机会话日志。"
+  }
+}

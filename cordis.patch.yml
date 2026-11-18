@@ -1,0 +1,3 @@
+- insert:
+    - id: daily-tokens
+      name: 'dsh-plugin-daily-tokens'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Daily tokens",
+    "description": "Shows the tokens DSH has consumed today beside the window traffic lights, counted from this installation's own session logs."
+  }
+}

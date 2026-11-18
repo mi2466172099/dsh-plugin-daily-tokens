@@ -1,6 +1,11 @@
 # dsh-plugin-daily-tokens
 
+<sub>中文 | <a href="README.en.md">English</a></sub>
+
 在 [DeepSeek Harness](https://github.com/deepseek-ai)（DSH）窗口左上角**红绿灯旁边**逐位滚动显示今天消耗的 token 总量，例如 `今日 12.34M token`。
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![DSH](https://img.shields.io/badge/DSH-0.2.x-5b5bd6)
 
 ## 安装
 
@@ -9,6 +14,21 @@
 3. 稍等一秒，红绿灯右侧出现 `今日 … token`。
 
 注意：**Host 侧代码改动不会热更新**，改完 `index.js` 需要到「插件」页把这一行关掉再打开（不必重启应用）；只改 `client.js` 刷新页面即可。
+
+### 装到整个 profile（可选）
+
+「添加插件」会把 bundle 挂到当前 profile。若想让这一行出现在 profile 的 `cordis.patch.yml` 里便于手动管理，可在那里加：
+
+```yaml
+- insert:
+    - id: daily-tokens
+      name: 'dsh-plugin-daily-tokens'
+      config: {}
+```
+
+- `id: daily-tokens` 是该插件在 profile 树里的行标识。
+- `name` 必须是包名 `dsh-plugin-daily-tokens`。
+- 本包自带的 `cordis.patch.yml` 就是这段内容，安装器会自动使用它，通常不必手动添加。
 
 ## 要求
 

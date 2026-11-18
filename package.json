@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-daily-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Show the tokens DSH has consumed today beside the window traffic lights.",
   "type": "module",
@@ -31,4 +31,5 @@
         "@deepseek-ai/dsh-client-ui-layout"
       ]
     }
-  }}
+  }
+}
